@@ -5,10 +5,8 @@
 	version="2.1">
 
 	<persistence-unit name="punit" transaction-type="RESOURCE_LOCAL">
-		<description>Presistence unit for JPA tutoruial of Hibernate Getting
-			Started Gide</description>
+		<description></description>
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<!-- <mapping-file>META-INF/book_mapping.xml</mapping-file> <class>com.entity.Book</class> -->
 		<properties>
 			<property name="javax.persistence.schema-generation-action"
 				value="drop-and-create" />
@@ -16,15 +14,13 @@
 				value="database" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/javaeedb?create=true" />
+				value="jdbc:mysql://localhost:3306/ibn2013" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="" />
 
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.hbm2ddl.auto" value="create" />
-<!-- 			<property name="format_sql" value="true" />
-			<property name="use_sql_comments" value="true" /> -->
+			<property name="hibernate.hbm2ddl.auto" value="validate" />
 		</properties>
 
 	</persistence-unit>
